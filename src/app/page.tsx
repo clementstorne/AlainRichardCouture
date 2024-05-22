@@ -1,3 +1,4 @@
+import FullCountdown from "@/components/FullCountdown";
 import Image from "next/image";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <h1 className="font-serif uppercase text-[48px] tracking-[.11em] ">
         Intime Sauvage
       </h1>
+      <FullCountdown date={new Date("2024-06-24T19:00:00")} />
     </main>
   );
 }
