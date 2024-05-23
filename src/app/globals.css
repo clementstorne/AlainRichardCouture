@@ -70,7 +70,7 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border font-serif;
   }
   body {
     @apply min-h-screen bg-main bg-center text-foreground;

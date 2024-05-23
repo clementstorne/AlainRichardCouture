@@ -73,8 +73,12 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        baskervville: ["var(--font-baskervville)"],
+        serif: '"Noto Serif"',
         inter: ["var(--font-inter)"],
+      },
+      maxWidth: {
+        "240": "960px",
+        "285": "1140px",
       },
       backgroundImage: {
         main: "linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),url('/img/background.webp')",

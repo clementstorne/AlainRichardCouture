@@ -2,6 +2,7 @@
 
 import SingleCountdown from "@/components/SingleCountdown";
 import { getRemainingTime } from "@/lib/countdown";
+import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 
 type FullCountdownProps = {
@@ -31,7 +32,14 @@ const FullCountdown = ({ date }: FullCountdownProps) => {
   }, [date]);
 
   return (
-    <div className="flex items-center space-x-20">
+    <div
+      className={cn(
+        "flex items-center",
+        "space-x-4",
+        "md:space-x-12",
+        "lg:space-x-20"
+      )}
+    >
       <SingleCountdown number={days} unit="days" />
       <SingleCountdown number={hours} unit="hours" />
       <SingleCountdown number={minutes} unit="minutes" />

@@ -1,9 +1,18 @@
 import FullCountdown from "@/components/FullCountdown";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="h-screen max-w-[960px] mx-auto flex flex-col items-center justify-center space-y-8">
+    <main
+      className={cn(
+        "max-w-240 min-h-screen flex flex-col items-center justify-center space-y-8 text-center",
+        "mx-5",
+        "md:mx-auto"
+      )}
+    >
+      <h1 className="sr-only">Alain Richard Couture</h1>
+
       <Image
         className="w-full"
         src="/alain-richard-couture.svg"
@@ -12,9 +21,16 @@ export default function Home() {
         height={37}
         priority
       />
-      <h1 className="font-serif uppercase text-[48px] tracking-[.11em] ">
+      <h2
+        className={cn(
+          "uppercase tracking-[.11em]",
+          "text-[28px]",
+          "md:text-[38px]",
+          "lg:text-[48px]"
+        )}
+      >
         Intime Sauvage
-      </h1>
+      </h2>
       <FullCountdown date={new Date("2024-06-24T19:00:00")} />
     </main>
   );

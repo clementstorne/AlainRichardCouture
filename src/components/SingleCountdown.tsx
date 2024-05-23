@@ -1,3 +1,5 @@
+import { cn } from "@/lib/utils";
+
 type SingleCountdownProps = {
   number: number;
   unit: "days" | "hours" | "minutes" | "seconds";
@@ -22,11 +24,25 @@ const SingleCountdown = ({ number, unit }: SingleCountdownProps) => {
   };
 
   return (
-    <div className="w-[139px] flex flex-col items-center">
-      <span className="text-[128px] font-bold -mb-9">
+    <div className={cn("flex flex-col items-center", "w-16", "md:w-[139px]")}>
+      <span
+        className={cn(
+          "font-serif font-bold ",
+          "text-[42px] -mb-3",
+          "md:text-[84px] md:-mb-6",
+          "lg:text-[126px] lg:-mb-9"
+        )}
+      >
         {formatNumber(number)}
       </span>
-      <span className="text-[24px] uppercase">
+      <span
+        className={cn(
+          "uppercase",
+          "text-[12px] font-bold",
+          "md:text-[18px]",
+          "lg:text-[24px] lg:font-normal"
+        )}
+      >
         {number > 1 ? getUnit(unit) + "s" : getUnit(unit)}
       </span>
     </div>
