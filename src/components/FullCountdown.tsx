@@ -7,9 +7,10 @@ import { useEffect, useState } from "react";
 
 type FullCountdownProps = {
   date: Date;
+  className?: string;
 };
 
-const FullCountdown = ({ date }: FullCountdownProps) => {
+const FullCountdown = ({ date, className }: FullCountdownProps) => {
   const getInitialRemainingTime = () => getRemainingTime(date);
 
   const [days, setDays] = useState(getInitialRemainingTime().days);
@@ -37,7 +38,8 @@ const FullCountdown = ({ date }: FullCountdownProps) => {
         "flex items-center",
         "space-x-4",
         "md:space-x-12",
-        "lg:space-x-20"
+        "lg:space-x-20",
+        className
       )}
     >
       <SingleCountdown number={days} unit="days" />
