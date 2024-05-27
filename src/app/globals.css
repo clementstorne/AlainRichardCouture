@@ -73,6 +73,6 @@
     @apply border-border font-serif;
   }
   body {
-    @apply min-h-screen bg-main bg-center text-foreground;
+    @apply min-h-screen text-foreground;
   }
 }
