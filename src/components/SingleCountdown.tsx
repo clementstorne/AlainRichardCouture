@@ -37,7 +37,7 @@ const SingleCountdown = ({ number, unit }: SingleCountdownProps) => {
       </span>
       <span
         className={cn(
-          "uppercase",
+          "font-serif uppercase",
           "text-[12px] font-bold",
           "md:text-[18px]",
           "lg:text-[24px] lg:font-normal"

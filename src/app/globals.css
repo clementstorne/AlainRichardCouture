@@ -70,9 +70,22 @@
 
 @layer base {
   * {
-    @apply border-border font-serif;
+    @apply border-border;
   }
   body {
     @apply min-h-screen text-foreground;
+  }
+
+  h1,
+  h2 {
+    @apply font-bold font-serif;
+  }
+
+  h1 {
+    @apply text-5xl;
+  }
+
+  h2 {
+    @apply text-4xl;
   }
 }
