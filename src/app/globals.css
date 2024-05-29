@@ -70,7 +70,7 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border font-serif;
   }
   body {
     @apply min-h-screen text-foreground;
@@ -78,14 +78,14 @@
 
   h1,
   h2 {
-    @apply font-bold font-serif;
+    @apply font-bold font-sans;
   }
 
   h1 {
-    @apply text-5xl;
+    @apply text-5xl text-center uppercase font-sans;
   }
 
   h2 {
-    @apply text-4xl;
+    @apply text-3xl;
   }
 }

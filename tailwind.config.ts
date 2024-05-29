@@ -134,12 +134,17 @@ const config = {
         serif: '"Noto Serif"',
         inter: ["var(--font-inter)"],
       },
+      spacing: {
+        "118": "472px",
+        "138": "552px",
+      },
       maxWidth: {
         "240": "960px",
         "285": "1140px",
       },
       backgroundImage: {
         main: "linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),url('/img/background.webp')",
+        jura: "url('/img/background-jura.webp')",
       },
     },
   },
