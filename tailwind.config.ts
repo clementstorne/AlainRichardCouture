@@ -135,6 +135,7 @@ const config = {
         inter: ["var(--font-inter)"],
       },
       spacing: {
+        "100": "400px",
         "118": "472px",
         "138": "552px",
       },

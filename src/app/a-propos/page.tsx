@@ -16,9 +16,9 @@ const page = () => {
       <Navbar />
       <main
         className={cn(
-          "max-w-240 min-h-screen mt-138 mb-8 flex flex-col items-center justify-center space-y-8",
-          "mx-5",
-          "md:mx-auto"
+          "max-w-240 min-h-screen mb-8 flex flex-col items-center justify-center space-y-8",
+          "mx-5 mt-100 ",
+          "md:mx-auto md:mt-138 "
         )}
       >
         <Title textColor="text-white" className="bg-jura bg-center bg-cover">
@@ -28,7 +28,12 @@ const page = () => {
         <section className="space-y-8">
           <h2>Mes racines jurassiennes : la source de mon inspiration</h2>
 
-          <div className="grid grid-cols-2 gap-5 items-center">
+          <div
+            className={cn(
+              "flex flex-col gap-5 items-center",
+              "md:grid md:grid-cols-2"
+            )}
+          >
             <div className="space-y-4 text-justify">
               <p>
                 Mes racines jurassiennes sont mon point d’ancrage et la source
@@ -65,7 +70,12 @@ const page = () => {
         <section className="space-y-8">
           <h2>Respect et transmission des valeurs naturelles</h2>
 
-          <div className="grid grid-cols-4 gap-5 items-center">
+          <div
+            className={cn(
+              "flex flex-col-reverse gap-5 items-center",
+              "md:grid md:grid-cols-4"
+            )}
+          >
             <Image
               className="w-full"
               src="/img/artisan.webp"
@@ -98,7 +108,12 @@ const page = () => {
         <section className="space-y-8">
           <h2>Une passion pour la mode et les matières nobles</h2>
 
-          <div className="grid grid-cols-4 gap-5 items-center">
+          <div
+            className={cn(
+              "flex flex-col gap-5 items-center",
+              "md:grid md:grid-cols-4"
+            )}
+          >
             <p className="col-span-3 space-y-4 text-justify">
               Passionné de mode et de style, je me suis formé aux techniques de
               couture, fourrures et vêtements de peaux. Ces dernières sont
@@ -123,7 +138,12 @@ const page = () => {
         <section className="space-y-8">
           <h2>Des matières premières responsables et traçables</h2>
 
-          <div className="grid grid-cols-7 gap-5 items-center">
+          <div
+            className={cn(
+              "flex flex-col-reverse gap-5 items-center",
+              "md:grid md:grid-cols-7"
+            )}
+          >
             <Image
               className="col-span-3 w-full"
               src="/img/fourrure.webp"
@@ -146,7 +166,12 @@ const page = () => {
         <section className="space-y-8">
           <h2>Des tenues chics et actuelles</h2>
 
-          <div className="grid grid-cols-4 gap-5 items-center">
+          <div
+            className={cn(
+              "flex flex-col gap-5 items-center",
+              "md:grid md:grid-cols-4"
+            )}
+          >
             <p className="col-span-3 space-y-4 text-justify">
               Je crée des tenues chics et actuelles, chaudes et sensuelles qui
               se portent au quotidien ou pour un événement spécial. Osez à
