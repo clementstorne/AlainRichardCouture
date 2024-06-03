@@ -80,6 +80,19 @@ const config = {
         "2300": "2300ms",
         "2400": "2400ms",
         "2500": "2500ms",
+        "2600": "2600ms",
+        "2700": "2700ms",
+        "2800": "2800ms",
+        "2900": "2900ms",
+        "3000": "3000ms",
+        "3100": "3100ms",
+        "3200": "3200ms",
+        "3300": "3300ms",
+        "3400": "3400ms",
+        "3500": "3500ms",
+        "3600": "3600ms",
+        "3700": "3700ms",
+        "3800": "3800ms",
       },
       keyframes: {
         "accordion-down": {
@@ -119,6 +132,26 @@ const config = {
             opacity: "1",
           },
         },
+        "tilt-in-left": {
+          from: {
+            transform: "rotateX(30deg) translateX(-300px) skewX(30deg)",
+            opacity: "0",
+          },
+          to: {
+            transform: "rotateX(0deg) translateX(0) skewX(0deg)",
+            opacity: "1",
+          },
+        },
+        "tilt-in-right": {
+          from: {
+            transform: "rotateX(-30deg) translateX(300px) skewX(30deg)",
+            opacity: "0",
+          },
+          to: {
+            transform: "rotateX(0deg) translateX(0) skewX(0deg)",
+            opacity: "1",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -129,6 +162,10 @@ const config = {
           "focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
         "focus-in-contract":
           "focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
+        "tilt-in-left":
+          "tilt-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
+        "tilt-in-right":
+          "tilt-in-right 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
       },
       fontFamily: {
         serif: '"Noto Serif"',
@@ -145,7 +182,7 @@ const config = {
       },
       backgroundImage: {
         main: "linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),url('/img/background.webp')",
-        jura: "url('/img/background-jura.webp')",
+        jura: "linear-gradient(rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.1)),url('/img/background-jura.webp')",
       },
     },
   },

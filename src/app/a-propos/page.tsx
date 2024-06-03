@@ -21,20 +21,25 @@ const page = () => {
           "md:mx-auto md:mt-138 "
         )}
       >
-        <Title textColor="text-white" className="bg-jura bg-center bg-cover">
+        <Title
+          textColor="text-black"
+          className="bg-jura bg-center bg-cover animate-fade-in-fwd"
+        >
           Bienvenue dans l&apos;univers d&apos;Alain Richard Couture
         </Title>
 
         <section className="space-y-8">
-          <h2>Mes racines jurassiennes : la source de mon inspiration</h2>
+          <h2 className="animate-tilt-in-left delay-700">
+            Mes racines jurassiennes : la source de mon inspiration
+          </h2>
 
           <div
             className={cn(
               "flex flex-col gap-5 items-center",
-              "md:grid md:grid-cols-2"
+              "md:grid md:grid-cols-12"
             )}
           >
-            <div className="space-y-4 text-justify">
+            <div className="col-span-6 space-y-4 text-justify animate-tilt-in-left delay-1000">
               <p>
                 Mes racines jurassiennes sont mon point d’ancrage et la source
                 de mon inspiration. Le Jura recèle une grande diversité de
@@ -57,7 +62,7 @@ const page = () => {
               </p>
             </div>
             <Image
-              className="w-full"
+              className="col-span-6 w-full animate-tilt-in-right delay-1000"
               src="/img/lynx.webp"
               alt="Lynx"
               width={4176}
@@ -68,23 +73,25 @@ const page = () => {
         </section>
 
         <section className="space-y-8">
-          <h2>Respect et transmission des valeurs naturelles</h2>
+          <h2 className="animate-tilt-in-left delay-1400">
+            Respect et transmission des valeurs naturelles
+          </h2>
 
           <div
             className={cn(
               "flex flex-col-reverse gap-5 items-center",
-              "md:grid md:grid-cols-4"
+              "md:grid md:grid-cols-12"
             )}
           >
             <Image
-              className="w-full"
+              className="col-span-5 w-full animate-tilt-in-left delay-1700"
               src="/img/artisan.webp"
               alt="Artisan"
               width={1920}
               height={2880}
               priority
             />
-            <div className="col-span-3 space-y-4 text-justify">
+            <div className="col-span-7 space-y-4 text-justify animate-tilt-in-right delay-1700">
               <p>
                 Le respect de la nature, sa force et ses richesses m’ont été
                 transmis par ma famille qui m’a guidé dans cette découverte.
@@ -106,15 +113,17 @@ const page = () => {
         </section>
 
         <section className="space-y-8">
-          <h2>Une passion pour la mode et les matières nobles</h2>
+          <h2 className="animate-tilt-in-left delay-2100">
+            Une passion pour la mode et les matières nobles
+          </h2>
 
           <div
             className={cn(
               "flex flex-col gap-5 items-center",
-              "md:grid md:grid-cols-4"
+              "md:grid md:grid-cols-12"
             )}
           >
-            <p className="col-span-3 space-y-4 text-justify">
+            <p className="col-span-7 space-y-4 text-justify animate-tilt-in-left delay-2400">
               Passionné de mode et de style, je me suis formé aux techniques de
               couture, fourrures et vêtements de peaux. Ces dernières sont
               devenues ma matière de prédilection et source d’inspiration.
@@ -125,9 +134,9 @@ const page = () => {
               vie, telle est ma motivation.
             </p>
             <Image
-              className="w-full"
-              src="/img/defile.webp"
-              alt="Défilé"
+              className="col-span-5 w-full animate-tilt-in-right delay-2400"
+              src="/img/cuir.webp"
+              alt="Cuir"
               width={1915}
               height={2868}
               priority
@@ -136,16 +145,18 @@ const page = () => {
         </section>
 
         <section className="space-y-8">
-          <h2>Des matières premières responsables et traçables</h2>
+          <h2 className="animate-tilt-in-left delay-2800">
+            Des matières premières responsables et traçables
+          </h2>
 
           <div
             className={cn(
               "flex flex-col-reverse gap-5 items-center",
-              "md:grid md:grid-cols-7"
+              "md:grid md:grid-cols-12"
             )}
           >
             <Image
-              className="col-span-3 w-full"
+              className="col-span-6 w-full animate-tilt-in-left delay-3100"
               src="/img/fourrure.webp"
               alt="Fourrures"
               width={1920}
@@ -153,7 +164,7 @@ const page = () => {
               priority
             />
 
-            <p className="col-span-4 space-y-4 text-justify">
+            <p className="col-span-6 space-y-4 text-justify animate-tilt-in-right delay-3100">
               Je travaille avec des matières premières responsables et traçables
               : des fourrures d’élevage, des cuirs exotiques, mais aussi en
               réhabilitant et en ravivant des fourrures anciennes remisées au
@@ -164,15 +175,17 @@ const page = () => {
         </section>
 
         <section className="space-y-8">
-          <h2>Des tenues chics et actuelles</h2>
+          <h2 className="animate-tilt-in-left delay-3500">
+            Des tenues chics et actuelles
+          </h2>
 
           <div
             className={cn(
               "flex flex-col gap-5 items-center",
-              "md:grid md:grid-cols-4"
+              "md:grid md:grid-cols-12"
             )}
           >
-            <p className="col-span-3 space-y-4 text-justify">
+            <p className="col-span-7 space-y-4 text-justify animate-tilt-in-left delay-3800">
               Je crée des tenues chics et actuelles, chaudes et sensuelles qui
               se portent au quotidien ou pour un événement spécial. Osez à
               nouveau ce peau à peau, ce contact sauvage et charnel, un retour
@@ -181,7 +194,7 @@ const page = () => {
             </p>
 
             <Image
-              className="col-span-1 w-full"
+              className="col-span-5 w-full animate-tilt-in-right delay-3800"
               src="/img/creation.webp"
               alt="Création"
               width={1920}
