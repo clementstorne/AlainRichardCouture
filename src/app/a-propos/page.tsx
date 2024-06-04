@@ -63,8 +63,8 @@ const page = () => {
             </div>
             <Image
               className="col-span-6 w-full animate-tilt-in-right delay-1000"
-              src="/img/lynx.webp"
-              alt="Lynx"
+              src="/img/lynx-boreal-jura.webp"
+              alt="Lynx boréal dans les forêts du Jura"
               width={4176}
               height={2784}
               priority
@@ -85,10 +85,10 @@ const page = () => {
           >
             <Image
               className="col-span-5 w-full animate-tilt-in-left delay-1700"
-              src="/img/artisan.webp"
-              alt="Artisan"
-              width={1920}
-              height={2880}
+              src="/img/artisan-tradition-jura.webp"
+              alt="Artisan perpétuant les traditions du Jura"
+              width={1232}
+              height={974}
               priority
             />
             <div className="col-span-7 space-y-4 text-justify animate-tilt-in-right delay-1700">
@@ -135,10 +135,10 @@ const page = () => {
             </p>
             <Image
               className="col-span-5 w-full animate-tilt-in-right delay-2400"
-              src="/img/cuir.webp"
-              alt="Cuir"
-              width={1915}
-              height={2868}
+              src="/img/cuirs-exotiques-creations.webp"
+              alt="Cuirs exotiques utilisés dans les créations"
+              width={1501}
+              height={1501}
               priority
             />
           </div>
@@ -157,8 +157,8 @@ const page = () => {
           >
             <Image
               className="col-span-6 w-full animate-tilt-in-left delay-3100"
-              src="/img/fourrure.webp"
-              alt="Fourrures"
+              src="/img/fourrures-rehabilitees-transformees.webp"
+              alt="Fourrures anciennes réhabilitées et transformées"
               width={1920}
               height={1280}
               priority
@@ -195,10 +195,10 @@ const page = () => {
 
             <Image
               className="col-span-5 w-full animate-tilt-in-right delay-3800"
-              src="/img/creation.webp"
-              alt="Création"
-              width={1920}
-              height={2880}
+              src="/img/creation-mode-chic-actuelle.webp"
+              alt="Création de mode chic et actuelle"
+              width={853}
+              height={1280}
               priority
             />
           </div>

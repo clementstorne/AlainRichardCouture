@@ -182,7 +182,7 @@ const config = {
       },
       backgroundImage: {
         main: "linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),url('/img/background.webp')",
-        jura: "linear-gradient(rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.1)),url('/img/background-jura.webp')",
+        jura: "linear-gradient(rgba(255, 255, 255, 0.15),rgba(255, 255, 255, 0.15)),url('/img/bienvenue-alain-richard-couture.webp')",
       },
     },
   },
