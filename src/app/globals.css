@@ -89,3 +89,9 @@
     @apply text-2xl md:text-3xl;
   }
 }
+
+@layer utilities {
+  .navbar-link {
+    @apply font-bold font-sans uppercase text-lg;
+  }
+}

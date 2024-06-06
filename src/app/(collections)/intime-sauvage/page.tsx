@@ -17,18 +17,18 @@ const page = () => {
       <main
         className={cn(
           "max-w-240 min-h-screen mb-8 flex flex-col items-center justify-center space-y-8",
-          "mx-5 mt-100 ",
-          "md:mx-auto md:mt-138 "
+          "mx-5 mt-108",
+          "md:mx-auto md:mt-146"
         )}
       >
         <Title
-          textColor="text-black"
-          className="bg-jura bg-center bg-cover animate-fade-in-fwd"
+          textColor="text-white"
+          className="bg-slate-600 bg-center bg-cover animate-fade-in-fwd"
         >
           Collection Automne/Hiver 2024 Intime Sauvage
         </Title>
 
-        <p>
+        <p className="animate-tilt-in-left delay-700">
           Découvrez notre nouvelle collection Automne/Hiver 2024 intitulée
           &ldquo;Intime Sauvage&rdquo;. Ce défilé rend hommage à mon Jura natal,
           à la nature brute et exotique, et à la puissance des forêts denses et
@@ -36,9 +36,11 @@ const page = () => {
         </p>
 
         <section className="space-y-8">
-          <h2>L&apos;inspiration du Jura</h2>
+          <h2 className="animate-tilt-in-left delay-1100">
+            L&apos;inspiration du Jura
+          </h2>
 
-          <div className="text-justify">
+          <div className="text-justify animate-tilt-in-left delay-1400">
             <p>
               Le Jura, avec ses paysages époustouflants et sa nature préservée,
               est au cœur de notre inspiration. Les forêts mystérieuses, les
@@ -52,9 +54,11 @@ const page = () => {
         </section>
 
         <section className="space-y-8">
-          <h2>La femme de pouvoir et l&apos;homme viril</h2>
+          <h2 className="animate-tilt-in-left delay-1800">
+            La femme de pouvoir et l&apos;homme viril
+          </h2>
 
-          <div className="text-justify">
+          <div className="text-justify animate-tilt-in-left delay-2100">
             <p>
               Notre défilé célèbre une femme de pouvoir, forte et indépendante,
               incarnant la force et la sophistication. Elle est l&apos;essence
@@ -67,9 +71,11 @@ const page = () => {
         </section>
 
         <section className="space-y-8">
-          <h2>La relation à la peau sauvage</h2>
+          <h2 className="animate-tilt-in-left delay-2500">
+            La relation à la peau sauvage
+          </h2>
 
-          <div className="text-justify">
+          <div className="text-justify animate-tilt-in-left delay-2800">
             <p>
               &ldquo;Intime Sauvage&ldquo;Intime Sauvage&rdquo; tire son nom de
               cette relation intime que nous entretenons avec la peau,
@@ -83,9 +89,11 @@ const page = () => {
         </section>
 
         <section className="space-y-8">
-          <h2>Préservation et innovation</h2>
+          <h2 className="animate-tilt-in-left delay-3200">
+            Préservation et innovation
+          </h2>
 
-          <div className="text-justify">
+          <div className="text-justify animate-tilt-in-left delay-3500">
             <p>
               Nous nous engageons à préserver l&apos;artisanat et le
               savoir-faire primaire tout en innovant constamment. Nos créations
@@ -98,9 +106,11 @@ const page = () => {
         </section>
 
         <section className="space-y-8">
-          <h2>Un nouvel art de vivre</h2>
+          <h2 className="animate-tilt-in-left delay-3900">
+            Un nouvel art de vivre
+          </h2>
 
-          <div className="text-justify">
+          <div className="text-justify animate-tilt-in-left delay-4200">
             <p>
               En revisitant les codes avec une rigueur presque catholique, nous
               créons un nouvel art de vivre. Nos pièces sont conçues pour
