@@ -139,21 +139,21 @@ const config = {
         },
         "tilt-in-left": {
           from: {
-            transform: "rotateX(30deg) translateX(-300px) skewX(30deg)",
+            transform: "translateX(-300px) skewX(30deg)",
             opacity: "0",
           },
           to: {
-            transform: "rotateX(0deg) translateX(0) skewX(0deg)",
+            transform: "translateX(0) skewX(0deg)",
             opacity: "1",
           },
         },
         "tilt-in-right": {
           from: {
-            transform: "rotateX(-30deg) translateX(300px) skewX(30deg)",
+            transform: "translateX(300px) skewX(30deg)",
             opacity: "0",
           },
           to: {
-            transform: "rotateX(0deg) translateX(0) skewX(0deg)",
+            transform: "translateX(0) skewX(0deg)",
             opacity: "1",
           },
         },
@@ -190,6 +190,8 @@ const config = {
       backgroundImage: {
         main: "linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),url('/img/background.webp')",
         jura: "linear-gradient(rgba(255, 255, 255, 0.15),rgba(255, 255, 255, 0.15)),url('/img/bienvenue-alain-richard-couture.webp')",
+        "intime-sauvage":
+          "linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),url('/img/background.webp')",
       },
     },
   },

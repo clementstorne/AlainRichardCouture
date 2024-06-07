@@ -14,10 +14,10 @@ const Title = ({
   return (
     <div
       className={cn(
-        "absolute top-28 w-full",
+        "absolute w-full",
         "flex justify-center items-center",
-        "h-80",
-        "md:h-118",
+        "h-80 top-20",
+        "md:h-118 md:top-28",
         className
       )}
     >

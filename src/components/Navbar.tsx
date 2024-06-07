@@ -1,10 +1,99 @@
+"use client";
+
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+
+type BurgerButtonProps = {
+  className?: string;
+  isOpen: boolean;
+  onClick: () => void;
+};
+
+const BurgerButton = ({ className, isOpen, onClick }: BurgerButtonProps) => {
+  return (
+    <Button
+      variant={"link"}
+      className={cn("p-0", className)}
+      aria-label="Ouvrir le menu"
+      onClick={onClick}
+    >
+      {isOpen ? <X size={32} /> : <Menu size={32} />}
+    </Button>
+  );
+};
+
+type Link = {
+  href: string;
+  label: string;
+};
+
+const links: Link[] = [
+  {
+    href: "/",
+    label: "Défilé",
+  },
+  {
+    href: "/a-propos",
+    label: "Inspirations",
+  },
+  {
+    href: "/intime-sauvage",
+    label: "Intime Sauvage",
+  },
+];
 
 const Navbar = () => {
+  const currentPath = usePathname();
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleDrawer = () => {
+    setIsOpen(!isOpen);
+  };
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [currentPath]);
+
+  useEffect(() => {
+    const handleEscKeyPress = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && isOpen) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.body.style.setProperty("overflow", "hidden");
+    } else {
+      document.body.style.removeProperty("overflow");
+    }
+
+    document.addEventListener("keydown", handleEscKeyPress);
+
+    return () => {
+      document.removeEventListener("keydown", handleEscKeyPress);
+    };
+  }, [isOpen]);
+
   return (
-    <header className="fixed top-0 h-28 w-full z-10 bg-slate-50 flex flex-col items-center justify-center">
+    <header
+      className={cn(
+        "fixed top-0 h-20 w-screen z-10 bg-slate-50 flex flex-col items-center justify-center",
+        "md:h-28",
+        "animate-none"
+      )}
+    >
+      <BurgerButton
+        className="md:hidden absolute right-5 top-6"
+        isOpen={isOpen}
+        onClick={handleDrawer}
+      />
+
       <Link href="/">
         <Image
           className="h-20"
@@ -15,15 +104,35 @@ const Navbar = () => {
           priority
         />
       </Link>
+
       <nav
-        className={cn("h-6 py-2", "flex space-x-8 items-center justify-center")}
+        className={cn(
+          "h-6 py-2",
+          "flex space-x-8 items-center justify-center",
+          "max-md:hidden"
+        )}
       >
-        <Link className="navbar-link" href="a-propos">
-          Inspirations
-        </Link>
-        <Link className="navbar-link" href="intime-sauvage">
-          Intime Sauvage
-        </Link>
+        {links.map((link, index) => (
+          <Link key={index} href={link.href} className="navbar-link">
+            {link.label}
+          </Link>
+        ))}
+      </nav>
+
+      <nav
+        className={cn(
+          "fixed top-20 left-0 right-0 h-full bg-slate-50 overflow-auto",
+          "flex flex-col justify-start items-center space-y-8 py-8",
+          "transform ease-in-out transition-all duration-300",
+          isOpen && "translate-x-0",
+          !isOpen && "-translate-x-full"
+        )}
+      >
+        {links.map((link, index) => (
+          <Link key={index} href={link.href} className="navbar-link">
+            {link.label}
+          </Link>
+        ))}
       </nav>
     </header>
   );
