@@ -1,3 +1,4 @@
+import LooksCarousel from "@/components/LooksCarousel";
 import Title from "@/components/Title";
 import { Metadata } from "next";
 
@@ -17,14 +18,12 @@ const page = () => {
       >
         Collection Automne/Hiver 2024 Intime Sauvage
       </Title>
-
       <p className="animate-tilt-in-left delay-700">
         Découvrez notre nouvelle collection Automne/Hiver 2024 intitulée
         &ldquo;Intime Sauvage&rdquo;. Ce défilé rend hommage à mon Jura natal, à
         la nature brute et exotique, et à la puissance des forêts denses et des
         lacs majestueux de cette région.
       </p>
-
       <section className="space-y-8">
         <h2 className="animate-tilt-in-left delay-1100">
           L&apos;inspiration du Jura
@@ -41,7 +40,6 @@ const page = () => {
           </p>
         </div>
       </section>
-
       <section className="space-y-8">
         <h2 className="animate-tilt-in-left delay-1800">
           La femme de pouvoir et l&apos;homme viril
@@ -58,7 +56,6 @@ const page = () => {
           </p>
         </div>
       </section>
-
       <section className="space-y-8">
         <h2 className="animate-tilt-in-left delay-2500">
           La relation à la peau sauvage
@@ -76,7 +73,6 @@ const page = () => {
           </p>
         </div>
       </section>
-
       <section className="space-y-8">
         <h2 className="animate-tilt-in-left delay-3200">
           Préservation et innovation
@@ -93,7 +89,6 @@ const page = () => {
           </p>
         </div>
       </section>
-
       <section className="space-y-8">
         <h2 className="animate-tilt-in-left delay-3900">
           Un nouvel art de vivre
@@ -109,6 +104,7 @@ const page = () => {
           </p>
         </div>
       </section>
+      <LooksCarousel />
     </>
   );
 };
