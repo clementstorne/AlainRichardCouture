@@ -1,4 +1,3 @@
-import LooksCarousel from "@/components/LooksCarousel";
 import Title from "@/components/Title";
 import { Metadata } from "next";
 
@@ -104,7 +103,6 @@ const page = () => {
           </p>
         </div>
       </section>
-      <LooksCarousel />
     </>
   );
 };

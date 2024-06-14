@@ -38,12 +38,16 @@ const links: Link[] = [
     label: "Défilé",
   },
   {
-    href: "/a-propos",
-    label: "Inspirations",
+    href: "/decouvrir-univers",
+    label: "L'univers",
   },
   {
     href: "/intime-sauvage",
     label: "Intime Sauvage",
+  },
+  {
+    href: "/intime-sauvage/looks",
+    label: "Looks",
   },
 ];
 

@@ -20,7 +20,7 @@ const config = {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
+        border: "hsl(4 81.2% 45.9%)",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
@@ -50,15 +50,15 @@ const config = {
           foreground: "hsl(var(--popover-foreground))",
         },
         card: {
-          DEFAULT: "hsl(var(--card))",
+          DEFAULT: "hsl(4 0% 100%)",
           foreground: "hsl(var(--card-foreground))",
         },
       },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
+      // borderRadius: {
+      //   lg: "var(--radius)",
+      //   md: "calc(var(--radius) - 2px)",
+      //   sm: "calc(var(--radius) - 4px)",
+      // },
       transitionDelay: {
         "400": "400ms",
         "500": "500ms",
@@ -86,7 +86,6 @@ const config = {
         "2900": "2900ms",
         "3000": "3000ms",
         "3100": "3100ms",
-
         "3200": "3200ms",
         "3300": "3300ms",
         "3400": "3400ms",
