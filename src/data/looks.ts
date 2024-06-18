@@ -3,6 +3,7 @@ import { LookData } from "@/types";
 export const LOOKS: LookData[] = [
   {
     id: 1,
+    url: "eclat-nocturne",
     title: "Éclat Nocturne",
     subtitle: "Une Élégance Inégalée sous les Étoiles",
     image: "/img/looks/eclat-nocturne.jpg",
@@ -11,6 +12,7 @@ export const LOOKS: LookData[] = [
   },
   {
     id: 2,
+    url: "elegance-intemporelle",
     title: "Élégance Intemporelle",
     subtitle: "L'Hommage à Maria Callas et Médée",
     image: "/img/looks/elegance-intemporelle.jpg",
@@ -19,6 +21,7 @@ export const LOOKS: LookData[] = [
   },
   {
     id: 3,
+    url: "elegance-intrepide",
     title: "Élégance Intrépide",
     subtitle: "L'Art du Matador Réinventé",
     image: "/img/looks/elegance-intrepide.jpg",
@@ -27,6 +30,7 @@ export const LOOKS: LookData[] = [
   },
   {
     id: 4,
+    url: "seduction-intemporelle",
     title: "Séduction Intemporelle",
     subtitle: "Le Perfecto en Astrakan et l'Ensemble Harnais Python",
     image: "/img/looks/seduction-intemporelle.jpg",
@@ -34,6 +38,7 @@ export const LOOKS: LookData[] = [
   },
   {
     id: 5,
+    url: "eclat-futuriste",
     title: "Éclat Futuriste",
     subtitle: "L'Ensemble Néoprène et Fourrure Luxueuse",
     image: "/img/looks/eclat-futuriste.jpg",
@@ -41,6 +46,7 @@ export const LOOKS: LookData[] = [
   },
   {
     id: 6,
+    url: "elegance-athletique",
     title: "Élégance Athlétique",
     subtitle: "L'Ensemble Sportif en Soie et Néoprène",
     image: "/img/looks/elegance-athletique.jpg",
@@ -48,6 +54,7 @@ export const LOOKS: LookData[] = [
   },
   {
     id: 7,
+    url: "seduction-domestique",
     title: "Séduction Domestique",
     subtitle: "L'Ensemble Intime en Ragondin, Néoprène et Serpent",
     image: "/img/looks/seduction-domestique.jpg",
@@ -55,6 +62,7 @@ export const LOOKS: LookData[] = [
   },
   {
     id: 8,
+    url: "elegance-urbaine",
     title: "L'Élégance Urbaine",
     subtitle: "Le Pantalon en Cuir et le Blouson Over Size",
     image: "/img/looks/elegance-urbaine.jpg",
@@ -62,6 +70,7 @@ export const LOOKS: LookData[] = [
   },
   {
     id: 9,
+    url: "majeste-militaire",
     title: "Majesté Militaire",
     subtitle: "L'Ensemble du Garde Soldat",
     image: "/img/looks/majeste-militaire.jpg",
@@ -69,6 +78,7 @@ export const LOOKS: LookData[] = [
   },
   {
     id: 10,
+    url: "eclat-doux-provocateur",
     title: "Éclat Doux et Provocateur",
     subtitle: "Adonis",
     image: "/img/looks/eclat-doux-provocateur.jpg",
@@ -76,6 +86,7 @@ export const LOOKS: LookData[] = [
   },
   {
     id: 11,
+    url: "elegance-rebelle",
     title: "L'Élégance Rebelle",
     subtitle: "La Pèlerine de Vision et la Robe en Cuir",
     image: "/img/looks/elegance-rebelle.jpg",
@@ -83,6 +94,7 @@ export const LOOKS: LookData[] = [
   },
   {
     id: 12,
+    url: "elegance-bourgeoise-reinventee",
     title: "L'Élégance Bourgeoise Réinventée",
     subtitle: "Un Trio de Pièces Raﬃnées",
     image: "/img/looks/elegance-bourgeoise-reinventee.jpg",
@@ -90,6 +102,7 @@ export const LOOKS: LookData[] = [
   },
   {
     id: 13,
+    url: "evolution-technologique-fourrure",
     title: "L'Évolution Technologique de la Fourrure",
     subtitle: "Une Alliance Baroque Naturelle",
     image: "/img/looks/evolution-technologique-fourrure.jpg",
@@ -97,6 +110,7 @@ export const LOOKS: LookData[] = [
   },
   {
     id: 14,
+    url: "elegance-sportive",
     title: "Élégance Sportive",
     subtitle: "Un Duo Inspiré du Trappeur Canadien et du Patinage Artistique",
     image: "/img/looks/elegance-sportive.jpg",
@@ -104,6 +118,7 @@ export const LOOKS: LookData[] = [
   },
   {
     id: 15,
+    url: "deuil-sacre",
     title: "Le Deuil Sacré",
     subtitle: "Une Élégance Funéraire",
     image: "/img/looks/deuil-sacre.jpg",
@@ -111,6 +126,7 @@ export const LOOKS: LookData[] = [
   },
   {
     id: 16,
+    url: "symphonie-celeste",
     title: "Symphonie Céleste",
     subtitle: "Une Ode à la Pureté et à la Grâce Divine",
     image: "/img/looks/symphonie-celeste.jpg",
@@ -118,6 +134,7 @@ export const LOOKS: LookData[] = [
   },
   {
     id: 17,
+    url: "elegance-seduction-maison",
     title: "Élégance et Séduction à la Maison",
     subtitle: "Un Ensemble Luxueux",
     image: "/img/looks/elegance-seduction-maison.jpg",
