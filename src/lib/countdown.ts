@@ -8,3 +8,9 @@ export const getRemainingTime = (date: Date) => {
     seconds: Math.floor((diff / 1000) % 60),
   };
 };
+
+export const scheduleContent = (date: Date) => {
+  const now = new Date();
+  const diff = date.getTime() - now.getTime();
+  return diff > 0 ? true : false;
+};

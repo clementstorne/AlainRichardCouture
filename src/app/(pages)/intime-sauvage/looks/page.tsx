@@ -1,8 +1,10 @@
 import LookCard from "@/components/LookCard";
 import Title from "@/components/Title";
 import { LOOKS } from "@/data/looks";
+import { scheduleContent } from "@/lib/countdown";
 import { cn } from "@/lib/utils";
 import { Metadata } from "next";
+import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
   title:
@@ -17,31 +19,35 @@ const page = () => {
     return `delay-${delay}`;
   };
 
-  return (
-    <>
-      <Title
-        textColor="text-black"
-        className="bg-intime-sauvage bg-center bg-cover animate-fade-in-fwd"
-      >
-        Découvrez les looks de la collection Intime Sauvage
-      </Title>
+  if (scheduleContent(new Date("2024-06-24T15:00:00"))) {
+    redirect("/intime-sauvage/");
+  } else {
+    return (
+      <>
+        <Title
+          textColor="text-black"
+          className="bg-intime-sauvage bg-center bg-cover animate-fade-in-fwd"
+        >
+          Découvrez les looks de la collection Intime Sauvage
+        </Title>
 
-      <div
-        className={cn(
-          "grid grid-cols-1 gap-5 place-items-stretch",
-          "md:grid-cols-3 md:px-5 lg:px-0"
-        )}
-      >
-        {LOOKS.map((look, index) => (
-          <LookCard
-            key={look.id}
-            {...look}
-            className={`animate-tilt-in-left`}
-          />
-        ))}
-      </div>
-    </>
-  );
+        <div
+          className={cn(
+            "grid grid-cols-1 gap-5 place-items-stretch",
+            "md:grid-cols-3 md:px-5 lg:px-0"
+          )}
+        >
+          {LOOKS.map((look, index) => (
+            <LookCard
+              key={look.id}
+              {...look}
+              className={`animate-tilt-in-left`}
+            />
+          ))}
+        </div>
+      </>
+    );
+  }
 };
 
 export default page;

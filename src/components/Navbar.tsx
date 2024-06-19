@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { scheduleContent } from "@/lib/countdown";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
@@ -32,24 +33,39 @@ type Link = {
   label: string;
 };
 
-const links: Link[] = [
-  {
-    href: "/",
-    label: "Défilé",
-  },
-  {
-    href: "/decouvrir-univers",
-    label: "L'univers",
-  },
-  {
-    href: "/intime-sauvage",
-    label: "Intime Sauvage",
-  },
-  {
-    href: "/intime-sauvage/looks",
-    label: "Looks",
-  },
-];
+const links: Link[] = scheduleContent(new Date("2024-06-24T15:00:00"))
+  ? [
+      {
+        href: "/",
+        label: "Défilé",
+      },
+      {
+        href: "/decouvrir-univers",
+        label: "L'univers",
+      },
+      {
+        href: "/intime-sauvage",
+        label: "Intime Sauvage",
+      },
+    ]
+  : [
+      {
+        href: "/",
+        label: "Défilé",
+      },
+      {
+        href: "/decouvrir-univers",
+        label: "L'univers",
+      },
+      {
+        href: "/intime-sauvage",
+        label: "Intime Sauvage",
+      },
+      {
+        href: "/intime-sauvage/looks",
+        label: "Looks",
+      },
+    ];
 
 const Navbar = () => {
   const currentPath = usePathname();
