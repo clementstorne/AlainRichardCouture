@@ -2,6 +2,7 @@ import Title from "@/components/Title";
 import { getLook } from "@/lib/dataUtils";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import Link from "next/link";
 import { redirect } from "next/navigation";
 
 const page = async ({ params }: { params: { look: string } }) => {
@@ -22,8 +23,8 @@ const page = async ({ params }: { params: { look: string } }) => {
         Collection Automne/Hiver 2024 Intime Sauvage
       </Title>
 
-      <h2>{look.title}</h2>
-      <h3>{look.subtitle}</h3>
+      <h2 className="animate-tilt-in-left delay-700">{look.title}</h2>
+      <h3 className="animate-tilt-in-left delay-700">{look.subtitle}</h3>
 
       <div
         className={cn(
@@ -36,14 +37,21 @@ const page = async ({ params }: { params: { look: string } }) => {
           alt={look.title}
           width={700}
           height={1500}
-          className="w-full h-auto"
+          className="w-full h-auto animate-tilt-in-left delay-1000"
         />
-        <div className="col-span-2 space-y-4">
+        <div className="col-span-2 space-y-4 text-justify animate-tilt-in-right delay-1000">
           {splitDescription.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
         </div>
       </div>
+
+      <Link
+        href="/intime-sauvage/looks"
+        className="font-sans font-bold text-primary animate-fade-in-fwd delay-1300"
+      >
+        Voir les autres looks
+      </Link>
     </>
   );
 };

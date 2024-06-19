@@ -12,6 +12,11 @@ export const metadata: Metadata = {
 };
 
 const page = () => {
+  const getDelay = (index: number) => {
+    const delay = 1000 + 200 * index;
+    return `delay-${delay}`;
+  };
+
   return (
     <>
       <Title
@@ -23,12 +28,16 @@ const page = () => {
 
       <div
         className={cn(
-          "grid grid-cols-1 gap-5",
+          "grid grid-cols-1 gap-5 place-items-stretch",
           "md:grid-cols-3 md:px-5 lg:px-0"
         )}
       >
-        {LOOKS.map((look) => (
-          <LookCard key={look.id} {...look} />
+        {LOOKS.map((look, index) => (
+          <LookCard
+            key={look.id}
+            {...look}
+            className={`animate-tilt-in-left`}
+          />
         ))}
       </div>
     </>

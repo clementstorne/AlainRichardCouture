@@ -3,7 +3,7 @@ import { LookData } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 
-type LookCardProps = LookData;
+type LookCardProps = LookData & { className?: string };
 
 const LookCard = ({
   id,
@@ -12,10 +12,11 @@ const LookCard = ({
   subtitle,
   image,
   description,
+  className,
 }: LookCardProps) => {
   return (
-    <Link href={`/intime-sauvage/looks/${url}`}>
-      <Card className="hover:shadow-lg">
+    <Link href={`/intime-sauvage/looks/${url}`} className={className}>
+      <Card className="hover:shadow-lg h-full">
         <CardHeader>
           <CardTitle>{title}</CardTitle>
         </CardHeader>
