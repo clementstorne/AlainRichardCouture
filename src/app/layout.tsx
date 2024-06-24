@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -20,7 +21,15 @@ export default function RootLayout({
     <html lang="fr">
       <body>
         <Navbar />
-        {children}
+        <main
+          className={cn(
+            "max-w-240 min-h-screen mb-8 flex flex-col items-center justify-center space-y-8",
+            "mx-5 mt-100",
+            "md:mx-auto md:mt-146"
+          )}
+        >
+          {children}
+        </main>
       </body>
     </html>
   );
