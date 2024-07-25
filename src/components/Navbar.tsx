@@ -45,6 +45,10 @@ const links: Link[] = [
     href: "/intime-sauvage/looks",
     label: "Looks",
   },
+  {
+    href: "/beaume-de-coeur",
+    label: "Parfum",
+  },
 ];
 
 const Navbar = () => {
