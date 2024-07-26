@@ -7,9 +7,8 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: 'Parfum "Beaume au Cœur" - Alain Richard Couture',
-  description:
-    "Découvrez le parfum &ldquo;Beaume au Cœur&rdquo; d&apos;Alain Richard Couture.",
+  title: 'Parfum "Baume au Cœur" - Alain Richard Couture',
+  description: `Découvrez "Baume au Cœur", le parfum emblématique d'Alain Richard Couture. Une fragrance unique née de la collaboration entre Pierre-Constantin Guéros et Alain Richard, inspirée par la nature du Jura et l'élégance nocturne. Plongez dans un voyage sensoriel alliant sophistication et authenticité, où chaque note raconte une histoire de nature et d'artisanat.`,
 };
 
 const page = () => {
