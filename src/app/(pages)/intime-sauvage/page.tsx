@@ -15,7 +15,7 @@ const page = () => {
         textColor="text-black"
         className="bg-intime-sauvage bg-center bg-cover animate-fade-in-fwd"
       >
-        Collection Automne/Hiver 2024 Intime Sauvage
+        Collection Automne/Hiver 2024 &ldquo;Intime Sauvage&rdquo;
       </Title>
       <p className="animate-tilt-in-left delay-700">
         Découvrez notre nouvelle collection Automne/Hiver 2024 intitulée

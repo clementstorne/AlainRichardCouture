@@ -97,6 +97,8 @@ const config = {
         "4000": "4000ms",
         "4100": "4100ms",
         "4200": "4200ms",
+        "4300": "4300ms",
+        "4400": "4400ms",
       },
       keyframes: {
         "accordion-down": {
@@ -191,6 +193,8 @@ const config = {
         jura: "linear-gradient(rgba(255, 255, 255, 0.15),rgba(255, 255, 255, 0.15)),url('/img/bienvenue-alain-richard-couture.webp')",
         "intime-sauvage":
           "linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),url('/img/background.webp')",
+        "beaume-au-coeur":
+          "linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),url('/img/parfum-baume-de-coeur-alain-richard-exterieur.webp')",
       },
     },
   },

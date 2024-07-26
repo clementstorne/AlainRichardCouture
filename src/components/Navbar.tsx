@@ -46,7 +46,7 @@ const links: Link[] = [
     label: "Looks",
   },
   {
-    href: "/beaume-de-coeur",
+    href: "/beaume-au-coeur",
     label: "Parfum",
   },
 ];
