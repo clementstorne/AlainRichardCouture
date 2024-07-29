@@ -11,7 +11,7 @@ const Look = ({ id, title, subtitle, image, description }: LookProps) => {
       className={cn("grid grid-cols-1 gap-5 items-center", "md:grid-cols-3")}
     >
       <Image
-        src={image}
+        src={image[0]}
         alt={title}
         width={700}
         height={1500}
