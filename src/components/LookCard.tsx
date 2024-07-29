@@ -22,7 +22,7 @@ const LookCard = ({
         </CardHeader>
         <CardContent>
           <Image
-            src={image}
+            src={image[0]}
             alt={title}
             width={700}
             height={1500}

@@ -1,4 +1,6 @@
+import CarouselPlugin from "@/components/CarouselPlugin";
 import Title from "@/components/Title";
+import { CarouselItem } from "@/components/ui/carousel";
 import { getLook } from "@/lib/dataUtils";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -32,13 +34,20 @@ const page = async ({ params }: { params: { look: string } }) => {
           "md:grid-cols-3 md:px-5 lg:px-0"
         )}
       >
-        <Image
-          src={look.image}
-          alt={look.title}
-          width={700}
-          height={1500}
-          className="w-full h-auto animate-tilt-in-left delay-1000"
-        />
+        <CarouselPlugin>
+          {look.image.map((image, index) => (
+            <CarouselItem key={index}>
+              <Image
+                src={image}
+                alt={look.title}
+                width={700}
+                height={1500}
+                className="w-full h-auto animate-tilt-in-left delay-1000"
+              />
+            </CarouselItem>
+          ))}
+        </CarouselPlugin>
+
         <div className="col-span-2 space-y-4 text-justify animate-tilt-in-right delay-1000">
           {splitDescription.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>

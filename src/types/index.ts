@@ -3,6 +3,6 @@ export interface LookData {
   url: string;
   title: string;
   subtitle: string;
-  image: string;
+  image: string[];
   description: string;
 }
